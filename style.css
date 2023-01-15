@@ -1,0 +1,31 @@
+body {
+    font-family: open sans;
+}
+.table th {
+    border: 1px solid black;
+}
+.table {
+    margin: 0 auto;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: aqua;
+}
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+td,th {
+    padding: 0.7rem;
+}
+.delete {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+.namedir {
+    display: flex;
+    flex-direction: column;
+}
