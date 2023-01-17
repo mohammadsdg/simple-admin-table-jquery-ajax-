@@ -1,5 +1,6 @@
 body {
     font-family: open sans;
+    background-color: #333;
 }
 .table th {
     border: 1px solid black;
@@ -11,11 +12,14 @@ body {
     display: flex;
     flex-direction: column;
     width: fit-content;
-    background-color: aqua;
 }
 td {
     border: 1px solid black;
     text-align: center;
+    color: #fff;
+}
+th {
+    background-color: #ccc;
 }
 td,th {
     padding: 0.7rem;

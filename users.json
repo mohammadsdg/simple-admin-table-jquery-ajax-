@@ -1,22 +1,27 @@
 [
 	{
 		"firstName":"John",
-		"lastName": "Doe"
+		"lastName": "Doe",
+		"del" : "delete"
 	},
 	{
 		"firstName":"Mark",
-		"lastName": "Smith"
+		"lastName": "Smith",
+		"del" : "delete"
 	},
 	{
 		"firstName":"Michael",
-		"lastName": "Willis"
+		"lastName": "Willis",
+		"del" : "delete"
 	},
 	{
 		"firstName":"Larry",
-		"lastName": "Samson"
+		"lastName": "Samson",
+		"del" : "delete"
 	},
 	{
 		"firstName":"Bruce",
-		"lastName": "Williams"
+		"lastName": "Williams",
+		"del" : "delete"
 	}
 ]

@@ -28,12 +28,26 @@
 $(document).ready(function(){
     $.getJSON("users.json" , function(data){
         let user_info = '';
+        let count = 0;
         $.each(data , function(key , value){
             user_info += '<tr>';
             user_info += '<td>'+value.firstName+'</td>';
             user_info += '<td>'+value.lastName+'</td>';
+            user_info += '<td class = "delete">'+value.del+'</td>';
+            user_info += '<td><input type = "checkbox" name = "record"></td>';
             user_info += '</tr>';
         });
-        $(".table").append(user_info)
+        $(".delete-row").click(function(){
+            $("table tbody").find('input[name="record"]').each(function(){
+            	if($(this).is(":checked")){
+                    $(this).parents("tr").remove();
+                }
+            });
+        });
+        $(".table").append(user_info);
+        
+        $('.delete').click(function(){
+            $('.delete').parent('tr').remove();
+        });
     });
 });
